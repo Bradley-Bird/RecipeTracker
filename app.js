@@ -1,4 +1,5 @@
 // import functions and grab DOM elements
+const form = document.getElementById('')
 
 // let state
 
