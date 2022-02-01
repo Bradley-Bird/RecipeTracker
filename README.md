@@ -17,8 +17,8 @@ HTML
     Add Ingredients Feature
 
 Make the form
-Add the form event listener (VALIDATE using console.log)
-ACP
+Add the form event listener (VALIDATE using console.log)----------
+ACP----------
 TDD `<li>` render function
 ACP
 create ingredients array variable
