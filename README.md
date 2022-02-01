@@ -13,8 +13,40 @@ HTML
 -   Type:submit button((js)event listener for 'preventDefault' and FormData(form) form =
     {ingredients: formData.get('ingredients')}...fame for quantity but Number )
 
--
+-   FEATURE PLAN (ORDER OF OPERATIONS)
+    Add Ingredients Feature
 
+Make the form
+Add the form event listener (VALIDATE using console.log)
+ACP
+TDD `<li>` render function
+ACP
+create ingredients array variable
+push form data to the ingredients array
+add your `<ul>` to the HTML
+add renderIngredients function (loop through all the ingredients, create an LI, render to page)
+ACP
+Remove Last Item
+
+Add the button
+Add the event listener
+Pop off the last element
+render the ingredients
+ACP
+Save Meal Function
+
+Add the input and button to HTML
+Add the event listener, and validate it works
+ACP
+TDD `<li>` render function
+ACP
+create meals array variable
+push the meal info on the array
+add `<ul>` to the HTML
+add renderMeals function (loop through all the meals, create an LI and render to the page)
+ACP
+reset the ingredients
+render the ingredients
 Additional considerations:
 
 -   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
