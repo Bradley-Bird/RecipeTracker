@@ -23,7 +23,7 @@ test('should return saved meals', (expect) => {
 
     //Act
     // Call the function you're testing and set the result to a const
-    const actual = renderMeal({name: 'bacon/eggs', count: 2});
+    const actual = renderMeal({ name: 'bacon/eggs', count: 2 });
 
     //Expect
     // Make assertions about what is expected versus the actual result

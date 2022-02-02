@@ -61,7 +61,7 @@ save.addEventListener('click', (e) => {
     const name = mealName.value;
     const count = ingredients.length;
     meals.push({ name, count });
-    console.log(name, count);
+    // console.log(name, count);
     renderMeals();
     renderIngredients();
     resetIList();
