@@ -35,16 +35,16 @@ render the ingredients------
 ACP--
 Save Meal Function--
 
-Add the input and button to HTML
-Add the event listener, and validate it works
-ACP
-TDD `<li>` render function
-ACP
-create meals array variable
-push the meal info on the array
-add `<ul>` to the HTML
-add renderMeals function (loop through all the meals, create an LI and render to the page)
-ACP
+Add the input and button to HTML----------
+Add the event listener, and validate it works------
+ACP------
+TDD `<li>` render function-----
+ACP----------
+create meals array variable---------
+push the meal info on the array----------
+add `<ul>` to the HTML---------
+add renderMeals function (loop through all the meals, create an LI and render to the page)-------
+ACP---
 reset the ingredients
 render the ingredients
 Additional considerations:
