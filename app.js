@@ -27,6 +27,10 @@ function renderMeals() {
         mList.append(li);
     }
 }
+function resetIlist() {
+    ingredients = [];
+    iList.textContent = '';
+}
 
 //button to remove last item of the ingredients array
 remove.addEventListener('click', () => {
@@ -58,6 +62,8 @@ save.addEventListener('click', (e) => {
     meals.push({ name, count });
     console.log(name, count);
     renderMeals();
+    renderIngredients();
+    resetIlist();
 });
 // use user input to update state
 // update DOM to reflect the new state
