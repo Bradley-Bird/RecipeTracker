@@ -1,4 +1,4 @@
-## The Golden Rule: 
+## The Golden Rule:
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
 
@@ -6,20 +6,54 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 ## Making a plan
 
-1) **Make a drawing of your app. Simple "wireframes"**
-1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-1) **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")** 
-1) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
-1) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-1) **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
-1) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+HTML
 
+-   Form element with two inputs, one for ingredients type:text.. one for quantity type:number.
+
+-   Type:submit button((js)event listener for 'preventDefault' and FormData(form) form =
+    {ingredients: formData.get('ingredients')}...fame for quantity but Number )
+
+-   FEATURE PLAN (ORDER OF OPERATIONS)
+    Add Ingredients Feature
+
+Make the form
+Add the form event listener (VALIDATE using console.log)----------
+ACP----------
+TDD `<li>` render function--------------
+ACP-----
+create ingredients array variable--------------
+push form data to the ingredients array----
+add your `<ul>` to the HTML----
+add renderIngredients function (loop through all the ingredients, create an LI, render to page)-----
+ACP-----
+Remove Last Item-------
+
+Add the button-----
+Add the event listener-------
+Pop off the last element---------
+render the ingredients------
+ACP--
+Save Meal Function--
+
+Add the input and button to HTML----------
+Add the event listener, and validate it works------
+ACP------
+TDD `<li>` render function-----
+ACP----------
+create meals array variable---------
+push the meal info on the array----------
+add `<ul>` to the HTML---------
+add renderMeals function (loop through all the meals, create an LI and render to the page)-------
+ACP---
+reset the ingredients
+render the ingredients
 Additional considerations:
-- Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
-- Consider your data model. 
-  - What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need? 
-  - What are the key/value pairs? 
-  - What arrays might you need? 
-  - What needs to live in a persistence layer?
-- Is there some state we need to initialize?
-- Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+-   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
+-   Consider your data model.
+    -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
+    -   What are the key/value pairs?
+    -   What arrays might you need?
+    -   What needs to live in a persistence layer?
+-   Is there some state we need to initialize?
+-   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
