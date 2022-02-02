@@ -1,6 +1,7 @@
 // import functions and grab DOM elements
 import { renderIngredient, renderMeal } from './utils.js';
 const form = document.getElementById('add-ingredient-form');
+const form2 = document.getElementById('meal-name-form');
 const iList = document.getElementById('ingredient-list');
 const mList = document.getElementById('saved-meal-list');
 const mealName = document.getElementById('meal-name');
@@ -27,7 +28,7 @@ function renderMeals() {
         mList.append(li);
     }
 }
-function resetIlist() {
+function resetIList() {
     ingredients = [];
     iList.textContent = '';
 }
@@ -63,7 +64,8 @@ save.addEventListener('click', (e) => {
     console.log(name, count);
     renderMeals();
     renderIngredients();
-    resetIlist();
+    resetIList();
+    form2.reset();
 });
 // use user input to update state
 // update DOM to reflect the new state
