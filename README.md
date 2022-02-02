@@ -19,19 +19,19 @@ HTML
 Make the form
 Add the form event listener (VALIDATE using console.log)----------
 ACP----------
-TDD `<li>` render function
-ACP
-create ingredients array variable
-push form data to the ingredients array
-add your `<ul>` to the HTML
-add renderIngredients function (loop through all the ingredients, create an LI, render to page)
-ACP
-Remove Last Item
+TDD `<li>` render function--------------
+ACP-----
+create ingredients array variable--------------
+push form data to the ingredients array----
+add your `<ul>` to the HTML----
+add renderIngredients function (loop through all the ingredients, create an LI, render to page)-----
+ACP-----
+Remove Last Item-------
 
-Add the button
-Add the event listener
-Pop off the last element
-render the ingredients
+Add the button-----
+Add the event listener-------
+Pop off the last element---------
+render the ingredients------
 ACP
 Save Meal Function
 

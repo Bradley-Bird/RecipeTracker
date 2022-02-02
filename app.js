@@ -13,11 +13,19 @@ let recipes = [];
 
 //loop through ingredients and update the view
 function renderIngredients() {
+    iList.textContent = '';
     for (let ingredient of ingredients) {
         const li = renderIngredient(ingredient);
         iList.appendChild(li);
     }
 }
+
+//button to remove last item of the ingredients array
+remove.addEventListener('click', () => {
+    ingredients.pop();
+    renderIngredients();
+    // console.log('remove');
+});
 
 // set event listeners
 // get user input
