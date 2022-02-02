@@ -32,8 +32,8 @@ Add the button-----
 Add the event listener-------
 Pop off the last element---------
 render the ingredients------
-ACP
-Save Meal Function
+ACP--
+Save Meal Function--
 
 Add the input and button to HTML
 Add the event listener, and validate it works

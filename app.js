@@ -2,14 +2,14 @@
 import { renderIngredient } from './utils.js';
 const form = document.getElementById('add-ingredient-form');
 const iList = document.getElementById('ingredient-list');
-const rList = document.getElementById('saved-recipe-list');
+const rList = document.getElementById('saved-meal-list');
 
 const remove = document.getElementById('removeBtn');
 const save = document.getElementById('save-recipeBtn');
 
 // let state
 let ingredients = [];
-let recipes = [];
+let meals = [];
 
 //loop through ingredients and update the view
 function renderIngredients() {
