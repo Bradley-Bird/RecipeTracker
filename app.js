@@ -3,9 +3,10 @@ import { renderIngredient } from './utils.js';
 const form = document.getElementById('add-ingredient-form');
 const iList = document.getElementById('ingredient-list');
 const rList = document.getElementById('saved-meal-list');
+const mealName = document.getElementById('meal-name');
 
 const remove = document.getElementById('removeBtn');
-const save = document.getElementById('save-recipeBtn');
+const save = document.getElementById('save-mealBtn');
 
 // let state
 let ingredients = [];
@@ -42,6 +43,13 @@ form.addEventListener('submit', (e) => {
     ingredients.push(ingredientForm);
     renderIngredients();
     form.reset();
+});
+save.addEventListener('click', (e) => {
+    e.preventDefault();
+    const name = mealName.value;
+    const count = ingredients.length;
+    meals.push({ name, count });
+    console.log(name, count);
 });
 // use user input to update state
 // update DOM to reflect the new state
